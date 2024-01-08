@@ -1,0 +1,79 @@
+@use "./../../common/variables" as var;
+@use "./../../common/mixins" as mix;
+
+.header {
+  position: relative;
+  margin-bottom: -130px;
+  padding-top: 50px;
+
+  &-top__address a {
+    color: var.$header-top__lang-title;
+
+    &:hover {
+      color: var.$background-lang-title;
+      transition-duration: 0.3s;
+    }
+  }
+
+  &-top__social a {
+    color: var.$header-top__lang-title;
+
+    &:hover {
+      color: var.$header-top__social;
+      transition-duration: 0.3s;
+    }
+  }
+
+  &-top__phone a {
+    color: var.$header-top__lang-title;
+
+    &:hover {
+      color: var.$background-lang-title;
+      transition-duration: 0.3s;
+    }
+  }
+
+  &-top {
+    &__wrapper > div:not(:last-child) {
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin-right: 6px;
+        margin-left: 6px;
+        background: white;
+        border-radius: 50%;
+      }
+    }
+
+    &__lang {
+      &-title {
+        padding: 5px 7px;
+        font-size: var.$font-size-lang;
+        font-weight: var.$font-weight-lang;
+        color: var.$header-top__lang-title;
+        text-transform: uppercase;
+        border-radius: 8px;
+      }
+
+      input:checked + span {
+        background: var.$background-lang-title;
+      }
+    }
+  }
+
+  .navbar-nav a {
+    font-weight: var.$font-weight-lang;
+    color: var.$header-top__lang-title;
+    text-transform: lowercase;
+
+    &:hover {
+      color: var.$background-lang-title;
+      transition-duration: 0.3s;
+    }
+  }
+}

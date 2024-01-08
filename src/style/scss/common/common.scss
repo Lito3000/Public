@@ -1,0 +1,55 @@
+@use "./../common/variables" as var;
+@use "./../common/mixins" as mix;
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gradient{
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//:root,
+//[data-bs-theme="light"] {
+//  a {
+//    --bs-link-color-rgb: 23, 24, 26;
+//
+//
+//    transition-duration: 0.3s;
+//
+//    &:hover {
+//      --bs-link-color-rgb: 114, 149, 44;
+//
+//      transition-duration: 0.3s;
+//    }
+//  }
+//}
+
+//.color_link_a{
+//  a {
+//    --bs-link-color-rgb: 102, 255, 59;
+//
+//
+//    transition-duration: 0.3s;
+//
+//    &:hover {
+//      --bs-link-color-rgb: 160, 39, 238;
+//
+//      transition-duration: 0.3s;
+//    }
+//  }
+//}

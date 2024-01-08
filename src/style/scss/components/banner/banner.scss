@@ -1,0 +1,16 @@
+@use "./../../common/variables" as var;
+@use "./../../common/mixins" as mix;
+
+.banner {
+  &-top__union {
+    position: absolute;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: var.$header-top__lang-title;
+    text-align: center;
+  }
+}
+
+

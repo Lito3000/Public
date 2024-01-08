@@ -1,0 +1,56 @@
+@use "./../../common/variables" as var;
+@use "./../../common/mixins" as mix;
+
+.frame {
+  &__consistent {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+
+  &__consistent a {
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #B3B3BA;
+    text-align: right;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--Gradient-Text-Red-Reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__consolidating {
+    p {
+      font-size: 19px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 30px;
+      color: var.$header-top__lang-title;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      color: var.$header-top__lang-title;
+    }
+  }
+
+  .others{
+    & p{
+      font-size: 38px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

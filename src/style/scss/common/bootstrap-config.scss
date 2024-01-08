@@ -1,0 +1,13 @@
+@use "./../common/variables" as var;
+@use "./../common/mixins" as mix;
+
+$bootstrap-icons-font-dir: "./../../../node_modules/bootstrap-icons/font/fonts";
+$navbar-nav-link-padding-x: 0;
+
+
+
+@import "./../../../../node_modules/bootstrap-icons/font/bootstrap-icons";
+@import "./../../../../node_modules/bootstrap/scss/bootstrap";
+
+
+

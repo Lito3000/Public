@@ -1,0 +1,35 @@
+@use "./../../common/variables" as var;
+@use "./../../common/mixins" as mix;
+
+
+.footer{
+  font-family: 'Public Sans 200', sans-serif;
+  font-size: 13px;
+  color: white;
+  background: #26282C;
+
+
+  &footer_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  &footer_column{
+    font-family: 'Public Sans 200', sans-serif;
+    font-size: 13px;
+  }
+
+  a {
+    --bs-link-color-rgb: 253, 253, 253;
+
+
+    transition-duration: 0.3s;
+
+    &:hover {
+      --bs-link-color-rgb: 55, 255, 249;
+
+      transition-duration: 0.3s;
+    }
+  }
+}
